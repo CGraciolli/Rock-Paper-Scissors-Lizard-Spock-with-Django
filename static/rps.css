@@ -1,0 +1,86 @@
+body {
+  background-color: #D8C1BE;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
+}
+.header h2 {
+  color: #f5f5f5;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3rem;
+  opacity: 0.8;
+}
+.options button {
+  border: none;
+  background-color: transparent;
+}
+.options .img {
+  color: #D8C1BE;
+}
+.options .img:hover {
+  cursor: pointer;
+}
+
+.flipped {
+  transform: scaleX(-1);
+}
+
+.quit {
+  display: flex;
+  justify-content: center;
+}
+.quit .leave {
+  background-color: #ECD6C4;
+  border: none;
+  border-radius: 5px;
+  color: #988C8C;
+  padding: 0.25rem 1rem;
+  border-bottom: solid 3px #ceb9a9;
+  border-right: solid 3px #ceb9a9;
+}
+.quit .leave:hover {
+  cursor: pointer;
+}
+
+.tooltip-inner {
+  background-color: #ECD6C4 !important;
+  color: #988C8C;
+}
+
+.tooltip-arrow::before {
+  border-bottom-color: #ECD6C4 !important;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  padding: 3rem;
+  gap: 5rem;
+  background-color: #D8C1BE;
+}
+
+.result {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.result span {
+  color: white;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=rps.css.map */

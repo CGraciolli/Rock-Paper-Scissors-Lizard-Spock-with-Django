@@ -1,0 +1,39 @@
+{% extends 'home.html' %}
+{% load static %}
+
+{% block game %}
+    <div class='game'>
+        {% if option == 'rock' %}
+            <img class="img flipped" width=100rem height=100rem src="{% static 'images/Rock.svg' %}" alt = "rock">
+        {% elif option == 'paper' %}
+            <img class="img" width=100rem height=100rem src="{% static 'images/Paper.svg' %}" alt = "paper">
+        {% elif option == 'scissors' %}
+            <img class="img flipped" width=100rem height=100rem src="{% static 'images/Scissors.svg' %}" alt = 'scissors'>
+        {% elif option == 'lizard' %}
+            <img class="img" width=100rem height=100rem src="{% static 'images/Lizard.svg' %}" alt = "lizard">
+        {% elif option == 'spock' %}
+            <img class="img" width=100rem height=100rem src="{% static 'images/Spock.svg' %}" alt = "spock">
+        {% endif %}
+
+        {% if opponent == 'rock' %}
+            <img class="img" width=100rem height=100rem src="{% static 'images/Rock.svg' %}" alt = "rock">
+        {% elif opponent == 'paper' %}
+            <img class="img flipped" width=100rem height=100rem src="{% static 'images/Paper.svg' %}" alt = "paper">
+        {% elif opponent == 'scissors' %}
+            <img class="img" width=100rem height=100rem src="{% static 'images/Scissors.svg' %}" alt = 'scissors'>
+        {% elif opponent == 'lizard' %}
+            <img class="img flipped" width=100rem height=100rem src="{% static 'images/Lizard.svg' %}" alt = "lizard">
+        {% elif opponent == 'spock' %}
+            <img class="img flipped" width=100rem height=100rem src="{% static 'images/Spock.svg' %}" alt = "spock">
+        {% endif %}
+    </div>
+{% endblock%}
+{% block result %}
+    {% if messages %}
+        <div class="result">
+            {% for message in messages %}
+                <span{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</span>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endblock %}

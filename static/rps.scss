@@ -1,0 +1,101 @@
+$background-color: #D8C1BE;
+$font-color: #f5f5f5;
+$button-color: #ECD6C4;
+$secondary-font-color: #988C8C;
+
+
+body{
+    background-color: $background-color;
+    margin:0;
+    padding:0;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    width:100%;
+
+    h2{
+        color:$font-color;
+    }
+}
+
+
+.options{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    padding: 3rem;
+    opacity: 0.8;
+
+    button{
+        border:none;
+        background-color:transparent;
+    }
+
+        .img{
+            color:$background-color;
+    
+            
+            &:hover{
+                cursor:pointer;
+            }
+        }
+
+}
+
+.flipped{
+    transform: scaleX(-1);
+}
+
+.quit{
+    display:flex;
+    justify-content: center;
+    .leave{
+        background-color: $button-color;
+        border: none;
+        border-radius: 5px;
+        color: $secondary-font-color;
+        padding: 0.25rem 1rem;
+        border-bottom: solid 3px #ceb9a9;
+        border-right: solid 3px #ceb9a9;
+
+        &:hover{
+            cursor:pointer;
+        }
+    }
+}
+
+
+.tooltip-inner {
+    background-color: $button-color !important;
+    color: $secondary-font-color;
+}
+
+.tooltip-arrow::before{
+    border-bottom-color: $button-color !important;
+}
+
+
+.game {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-self: center;
+    padding: 3rem;
+    gap: 5rem;
+    background-color: $background-color;
+}
+
+.result {
+    margin-top: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+        span {
+        color:white;
+        font-size: 2rem;
+}
+}
+

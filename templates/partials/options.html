@@ -1,0 +1,19 @@
+{% load static %}
+
+<div class="options">
+    <a href = "{% url 'play' option='rock' %}">
+        <img class="img flipped" width=100rem height=100rem src="{% static 'images/Rock.svg' %}" alt = "rock" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom" title="Rock breaks scissors. <br>Rock crushes lizard. <br>Rock is covered by paper. <br>Rock is vaporized by Spock.">
+    </a>
+    <a href = "{% url 'play' option='paper' %}">
+        <img class="img" width=100rem height=100rem src="{% static 'images/Paper.svg' %}" alt = "paper" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom" title="Paper covers rock. <br>Paper disproves Spock. <br>Paper is cut by Scissors. <br>Paper is eaten by lizard.">
+    </a>
+    <a href = "{% url 'play' option='scissors' %}">
+        <img class="img flipped" width=100rem height=100rem src="{% static 'images/Scissors.svg' %}" alt = "scissors" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom" title="Scissors cut paper. <br>Scissors decapitate lizard. <br>Scissores are broken by rock. <br>Scissores are used by Spock.">
+    </a>
+    <a href = "{% url 'play' option='lizard' %}">
+        <img class="img" width=100rem height=100rem src="{% static 'images/Lizard.svg' %}" alt = "lizard" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom" title="Lizard poisons Spock. <br>Lizard eats paper. <br>Lizard is crushed by rock. <br>Lizard is decapitated by scissors.">
+    </a>
+    <a href = "{% url 'play' option='spock' %}">
+        <img class="img" width=100rem height=100rem src="{% static 'images/Spock.svg' %}" alt = "spock" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom" title="Spock vaporizes rock. <br>Spock uses scissors. <br>Spock is poisoned by lizard. <br>Spock is disproved by paper.">
+    </a>
+</div>
